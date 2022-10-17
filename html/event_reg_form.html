@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Race Registration!</h1>
+		<form action="/asfd">
+			<label for="fn">First Name:</label>
+			<input type="text" id="fn" required />
+			<label for="ln">Last Name:</label>
+			<input type="text" id="ln" required /><br />
+			<p>Select a race:</p>
+			<input type="radio" id="r1" name="race" />
+			<label for="r1">Fun Run 5k</label><br />
+			<input type="radio" id="r2" name="race" />
+			<label for="r2">Half Marathon</label><br />
+			<input type="radio" id="r3" name="race" />
+			<label for="r3">Full Marathon</label><br />
+			<br />
+			<label for="em">Email</label>
+			<input type="email" id="em" required />
+			<label for="pw">Password</label>
+			<input type="password" id="pw" /><br />
+			<br />
+			<label for="ag">Select age group</label>
+			<select id="ag">
+				<option value="text">less than 18</option>
+				<option value="text">between 18 and 30</option>
+				<option value="text">greater than 30</option>
+			</select>
+			<br />
+			<button>Register!</button>
+		</form>
+	</body>
+</html>
