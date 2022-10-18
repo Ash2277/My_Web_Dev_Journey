@@ -1,0 +1,80 @@
+/* this is a universal selector */
+/* * { 
+    color: blue;
+} */
+
+/*to select all h1 and h2 elements. this is a element selector  */
+h1,h2{ 
+    color: aqua;
+}
+
+/* to select one particular element using its id.this is a id selector */
+#signup{
+    color: rgb(24, 162, 190);
+    background: black;
+}
+
+/* to select a set of elements by grouping them into a single class.this is a class selector */
+.span{
+    color: rgba(46, 142, 100, 0.621);
+}
+
+/* to select all elements inside a particular element dirctly or by giving the element a class name.this is a descendant selector */
+.post a{
+    color: rgb(33, 59, 136);
+}
+
+/* another example */
+
+footer a{
+    color: rgb(97, 39, 71);
+}
+
+/* to select the element that is adjacent to another element.this is a adjacent selector */
+/* all buttons adjacent to an h2 will be made to change color */
+h2 + button{
+    color: rgb(119, 145, 41);
+}
+
+/* to select the element that is the direct descendant of another element.this is a direct descendant selector */
+/* the anchor tag that is a direct descendant to the footer tag will change color */
+footer > a{
+    color: rgb(5, 70, 70);
+}
+
+/* :hover is used to perform some operation when we hover over that element with mouse */
+button:hover{
+    background-color: rgb(171, 35, 35);
+}
+
+/* another example is to select button inside a class post */
+.post button:hover{
+    background-color: rgb(110, 68, 16);
+}
+
+/* another example */
+a:hover{
+    text-decoration: underline wavy;
+}
+
+/* :active is used to perform some operation when we click on an element */
+
+.post button:active{
+    background-color: rgb(16, 75, 87);
+}
+
+/* :nth-of-type() is used to perform some operation every nth element  */
+
+section:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+/* ::first-letter is used to perform an operation on first letter of each element */
+h2::first-letter{
+    font-size: 50px;
+}
+
+/* CASCADE- to indicate that the order in which the styles are applied matter,whichever is applied later is chosen */
+h1,h2{
+    color: burlywood;
+}

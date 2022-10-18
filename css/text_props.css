@@ -1,0 +1,12 @@
+h1{
+    text-decoration: #999 underline wavy;
+    font-weight: 400;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 2.5;
+    letter-spacing: 20px;
+}
