@@ -1,0 +1,18 @@
+section{
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+/* aplha channel makes only the background transparent unless we apply alpha to the text as well */
+#rgba{
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* opacity makes both the text as well the background transparent */
+#opacity{
+    width: 50%;
+    height: 50%;
+    background-color: brown;
+    opacity: 0.7;
+}

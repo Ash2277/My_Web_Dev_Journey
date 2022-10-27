@@ -1,0 +1,60 @@
+section{
+    background-color: rgb(213, 79, 124);
+    width: 800px;
+    height: 800px;
+}
+/* 50% of 800px which is its parent element */
+div{
+    background-color: rgb(107, 37, 37);
+    width: 50%;
+    height: 50%;
+}
+#ems article{
+    font-size: 20px;
+}
+/* line height is 200% of itself ie 80px*/
+#ems h1{
+    font-size: 40px;
+    line-height: 200%;
+    border: 5px solid black;
+
+}
+/* 2 times the size of the parent ie article */
+#ems h2{
+    font-size: 2em;
+}
+/* margin left will be 1 times the size of the font size of h3 ie if font size is increased to 3em margin left will also increase 3 times */
+#ems h3{
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+/* same size as the font */
+#ems p{
+    font-size: 1em;
+}
+/* when we use px in nutton when we change size the change in the border radius is not relative therfore here we use em */
+#ems button{
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+}
+/* as ems derive size from parent incase of nested lists the size keeps growing */
+#ems ul{
+    font-size: 1.5em;
+}
+/* the size changes based on the font of root element */
+html{
+    font-size: 50px;
+}
+/* the size will be 3 times 50px */
+#rems h2{
+font-size: 3rem;
+}
+/* the size will be 2 times 50px */
+#rems h3{
+    font-size: 2rem;
+}
+/* the size will be 0.8 times 50px */
+#rems ul{
+    font-size: 0.8rem;
+}

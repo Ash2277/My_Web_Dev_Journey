@@ -1,0 +1,40 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+#middle {
+    background-color: #81b29a;
+}
+/* top does not affect the position of the middle block */
+#static #middle {
+    position: static;
+    top: 100px;
+}
+/* the position of the middle block is affected by top and left. Top pushes it down by 50px and left pushes it to the right by 50px */
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+/* acts as the anscestor that is positioned */
+#absolute {
+    position: relative;
+}
+/* absolute is the ancestor based on which the top and left shift occurs */
+#absolute #middle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+/* the block is always fixed to the top of the page and will always be there even when we scroll down */
+#fixed #middle {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+}

@@ -1,0 +1,81 @@
+.circle1{
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    transition: 1s;
+    
+}
+/* syntax-> transition: property-name duration timing-function delay  */
+.circle1:hover{
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+/* we can specify only one property that requires transtion such as border-radius only,here color will change immediately,we can also have diff properties with diff times */
+.circle2{
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    transition: border-radius 2s,background-color 1s;
+    
+}
+
+.circle2:hover{
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+/* we can also add a delay to specify the amount of time after which the transtions will begin */
+.circle3{
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    transition: border-radius 1s 1s;
+    
+}
+
+.circle3:hover{
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+section div{
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+/* there are various different timing functions that we can use */
+section:hover div{
+    margin-left: 500px;
+}
+/* this is used to produce an ease in effect onto the element */
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+/* this is used to produce an ease out effect onto the element */
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+/* this is used to produce a cubic bezier effect onto the element */
+div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.77, 0, 0.84, 0);
+}
+
+div:nth-of-type(4){
+   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+/* using timing functions */
+.circle4{
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    transition: border-radius 2s ease-in 1s,background-color 1s ease-out 1s;
+    
+}
+
+.circle4:hover{
+    background-color: cyan;
+    border-radius: 50%;
+}
