@@ -1,0 +1,24 @@
+body{
+    background-color: #151b29;
+}
+button{
+position: absolute;
+top:50%;
+left:50%;
+background: none;
+color: #ffa260;
+border-width: 2px;
+border-style: solid;
+padding: 1em 2em;
+border-color: #ffa260;
+font-size: 1em;
+}
+
+button:hover{
+    color: white;
+    border-color: #f1ff5c;
+    transform: translateY(-0.25em);
+    transition: 0.3s;
+    box-shadow: 0 3px 3px -0.5px #f1ff5c;
+    cursor: pointer;
+}
