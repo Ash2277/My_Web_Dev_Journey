@@ -1,0 +1,16 @@
+/* to apply equal spacing between each image we need to find out the no of margins and use that to divide the remaing space available  */
+img{
+    width: 30%;
+    margin: calc(10%/6); 
+}
+
+nav{
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    margin:calc(10%/6) ;
+    padding-bottom: 15px;
+    width: 30%;
+}
