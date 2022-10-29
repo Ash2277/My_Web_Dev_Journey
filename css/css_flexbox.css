@@ -1,0 +1,62 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    /* align-content: center; */
+    
+}
+/* flex direction can be row,column,reverse-row,reverse-column.The size of the divs will not matter, it will change it to fit all the different divs inside the container. */
+/* justify content can be flex-start,flex-end,space-between,space-around,space-evenly.It allows us to move the elements inside the container.It controls alignment in X axis when flex-direction is row and controls alignment in Y axis when flex direction is column. */
+/* flex wrap can be wrap,wrap-reverse.It is used to wrap the divs to prevent the shrinking in size. */
+/* align items is similar to justify contents,but it controls the alignment in Y axis when flex-direction is row and controls alignment in X axis when flex direction is column. */
+/* align content is used when the elements are wrapped using flex wrap.this aligns the wrapped elements. */
+/* flex basis is used to set the width if direction is row and it sets the height if direction is column */
+/* flex grow is used to take up the unoccupied space in a container */
+/* flex shrink is used to shrink the size of elements if its size is greater than that of the container */
+#container div{
+    /* width: 200px; */
+    height: 200px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+    flex-basis: 800px;
+}
+/* align self is used to align one particular element. */
+div:nth-of-type(2){
+    align-self: center;
+    /* flex-shrink: 1; */
+    
+}
+/* flex shorthand Syntax: flex:flex-grow flex-shrink flex-basis */
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.maincontent{
+    background-color: #003049;
+    flex-wrap: wrap;
+    flex: 2 1 800px;
+    border: 2px solid palegreen;
+}
+.sidebar{
+    background-color: rgb(106, 69, 22);
+    flex: 1 2 200px;
+    border: 2px solid white;
+
+}
