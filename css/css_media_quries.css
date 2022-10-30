@@ -1,0 +1,89 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 50%;
+}
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+/* here the color of h1 will be yellow above 400px */
+/* @media(min-width:400px)
+{
+    h1{
+        color: yellow;
+    }
+} */
+/* here the color of h1 will be yellow below 400px */
+/* @media(max-width:400px)
+{
+    h1{
+        color: yellow;
+    }
+} */
+/* here h1 will be yellow between 400px and 800px */
+/* @media(min-width:400px) and (max-width:800px)
+{
+    h1{
+        color: yellow;
+    }
+} */
+/* here we can have yellow b/w 0 to 500px, blue b/2 500 to 1000px, red b/w 1000 to 1500px.The order must be largest to smallest */
+@media(max-width:1500px)
+{
+    h1{
+        color: red;
+    }
+}
+@media(max-width:1000px)
+{
+    h1{
+        color: blue;
+    }
+}
+@media(max-width:500px)
+{
+    h1{
+        color: yellow;
+    }
+}
+/* here the bg color will change when we change the orientation */
+/* @media(orientation:landscape)
+{
+    body{
+        background-color: blue;
+    }
+} */
+
+@media(max-width:700px)
+{
+    h1{
+        font-size: 4em;
+    }
+    nav,nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:476px)
+{
+    h1{
+        font-size: 3em;
+    }
+}
