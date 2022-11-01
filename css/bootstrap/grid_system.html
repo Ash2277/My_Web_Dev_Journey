@@ -1,192 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-			crossorigin="anonymous"
-		/>
-		<title>Grid System</title>
-	</head>
-	<body>
-		<div class="container">
-			<h1 class="display-1 text-center text-primary">The Grid System</h1>
-			<div class="row">
-				<div class="col-6 bg-success">I AM 6 UNITS ie 50%</div>
-				<div class="col-6 bg-danger">I AM 6 UNITS ie 50%</div>
-			</div>
-			<div class="row">
-				<div class="col-3 bg-success">I AM 3 UNITS ie 25%</div>
-				<div class="col-9 bg-danger">I AM 9 UNITS ie 75%</div>
-			</div>
-			<div class="row">
-				<!-- in this case 2 units will be left empty which can be used for other purposes -->
-				<div class="col-2 bg-success">I AM 2 UNITS</div>
-				<div class="col-8 bg-danger">I AM 8 UNITS</div>
-			</div>
-			<div class="row">
-				<div class="col-1 bg-success">1 UNIT</div>
-				<div class="col-1 bg-danger">1 UNIT</div>
-				<div class="col-1 bg-success">1 UNIT</div>
-				<div class="col-1 bg-danger">1 UNIT</div>
-				<div class="col-1 bg-success">1 UNIT</div>
-				<div class="col-1 bg-danger">1 UNIT</div>
-				<div class="col-1 bg-success">1 UNIT</div>
-				<div class="col-1 bg-danger">1 UNIT</div>
-				<div class="col-1 bg-success">1 UNIT</div>
-				<div class="col-1 bg-danger">1 UNIT</div>
-				<div class="col-1 bg-success">1 UNIT</div>
-				<div class="col-1 bg-danger">1 UNIT</div>
-			</div>
-			<div class="row">
-				<!-- we can use just col to get equally spaced columns -->
-				<div class="col bg-success">I AM AUTO SIZED</div>
-				<div class="col bg-danger">I AM AUTO SIZED</div>
-			</div>
-			<div class="row">
-				<!-- we can use just col to get equally spaced columns -->
-				<div class="col bg-success">I AM AUTO SIZED</div>
-				<div class="col-5 bg-danger">I AM NOT AUTO SIZED</div>
-				<div class="col bg-info">I AM 4 AUTO SIZED</div>
-			</div>
-		</div>
-		<h2 class="display-2 text-center text-primary">Responsive Grid</h2>
-		<div class="row">
-			<div class="col-md-6">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?
-			</div>
-			<!-- here they stack once the display size becomes less than the display size for md,ie mid . above that they occupy 6 units like normal -->
-			<div class="col-md-6">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?
-			</div>
-		</div>
-		<div class="row">
-			<!-- here they stack once the display size becomes less than the display size for md,ie mid . above that they occupy 6 units in 2 rows until xl display size after which each of them occupy 3 units. -->
-			<div class="col-md-6 col-xl-3 bg-warning">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?
-			</div>
-
-			<div class="col-md-6 col-xl-3 bg-info">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?
-			</div>
-			<div class="col-md-6 col-xl-3 bg-warning">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?
-			</div>
-			<div class="col-md-6 col-xl-3 bg-info">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?
-			</div>
-		</div>
-		<br />
-		<!-- we can align items on the Y-axis using align-items- -->
-		<div class="row align-items-start">
-			<div class="col-md-6 col-xl-3 bg-warning">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?
-			</div>
-			<!-- we can also align specific divs by using align-self-  -->
-			<div class="col-md-6 col-xl-3 bg-info align-self-end">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?
-			</div>
-			<div class="col-md-6 col-xl-3 bg-warning">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?Lorem ipsum dolor sit amet, consectetur
-				adipisicing elit. Porro culpa ratione voluptate officiis aliquid in
-				fugiat obcaecati totam delectus iste consectetur facilis, est quo
-				laudantium eaque omnis praesentium doloribus alias! Lorem ipsum dolor
-				sit amet consectetur adipisicing elit. Aliquid perferendis, iusto
-				voluptas illo provident nobis neque mollitia delectus! Saepe, qui
-				dolorem delectus laborum accusantium autem sit mollitia impedit harum
-				ducimus.
-			</div>
-			<div class="col-md-6 col-xl-3 bg-info">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
-				maiores nesciunt expedita corrupti deserunt perspiciatis totam,
-				dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
-				officiis eum dolore saepe?
-			</div>
-		</div>
-		<br />
-		<!-- here the text is justified based on X axis -->
-		<div class="row justify-content-between border">
-			<div class="col-3 bg-info">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia
-				ratione cupiditate libero aliquam provident obcaecati odio omnis eaque
-				porro molestias sequi, totam dolore perspiciatis nulla temporibus
-				laboriosam modi est.
-			</div>
-			<div class="col-3 bg-primary">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-				quam corporis vitae ullam explicabo eum totam cupiditate expedita in
-				dolore. Quia laboriosam laborum maiores optio minima facere dolorum ab
-				id.
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 col-xl-4">
-				<img
-					src="https://images.unsplash.com/photo-1666974993470-d1116c9667e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-					alt="img1"
-					class="img-fluid"
-				/>
-			</div>
-			<div class="col-md-6 col-xl-4">
-				<img
-					class="img-fluid"
-					src="https://images.unsplash.com/photo-1666974993470-d1116c9667e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-					alt="img2"
-				/>
-			</div>
-			<div class="col-md-6 col-xl-4">
-				<img
-					class="img-fluid"
-					src="https://images.unsplash.com/photo-1667222886295-72267cdc99ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-					alt="img3"
-				/>
-			</div>
-		</div>
-		<script
-			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-			integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-			crossorigin="anonymous"
-		></script>
-	</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+         crossorigin="anonymous"
+         />
+      <title>Grid System</title>
+   </head>
+   <body>
+      <div class="container">
+         <h1 class="display-1 text-center text-primary">The Grid System</h1>
+         <div class="row">
+            <div class="col-6 bg-success">I AM 6 UNITS ie 50%</div>
+            <div class="col-6 bg-danger">I AM 6 UNITS ie 50%</div>
+         </div>
+         <div class="row">
+            <div class="col-3 bg-success">I AM 3 UNITS ie 25%</div>
+            <div class="col-9 bg-danger">I AM 9 UNITS ie 75%</div>
+         </div>
+         <div class="row">
+            <!-- in this case 2 units will be left empty which can be used for other purposes -->
+            <div class="col-2 bg-success">I AM 2 UNITS</div>
+            <div class="col-8 bg-danger">I AM 8 UNITS</div>
+         </div>
+         <div class="row">
+            <div class="col-1 bg-success">1 UNIT</div>
+            <div class="col-1 bg-danger">1 UNIT</div>
+            <div class="col-1 bg-success">1 UNIT</div>
+            <div class="col-1 bg-danger">1 UNIT</div>
+            <div class="col-1 bg-success">1 UNIT</div>
+            <div class="col-1 bg-danger">1 UNIT</div>
+            <div class="col-1 bg-success">1 UNIT</div>
+            <div class="col-1 bg-danger">1 UNIT</div>
+            <div class="col-1 bg-success">1 UNIT</div>
+            <div class="col-1 bg-danger">1 UNIT</div>
+            <div class="col-1 bg-success">1 UNIT</div>
+            <div class="col-1 bg-danger">1 UNIT</div>
+         </div>
+         <div class="row">
+            <!-- we can use just col to get equally spaced columns -->
+            <div class="col bg-success">I AM AUTO SIZED</div>
+            <div class="col bg-danger">I AM AUTO SIZED</div>
+         </div>
+         <div class="row">
+            <!-- we can use just col to get equally spaced columns -->
+            <div class="col bg-success">I AM AUTO SIZED</div>
+            <div class="col-5 bg-danger">I AM NOT AUTO SIZED</div>
+            <div class="col bg-info">I AM 4 AUTO SIZED</div>
+         </div>
+      </div>
+      <h2 class="display-2 text-center text-primary">Responsive Grid</h2>
+      <div class="row">
+         <div class="col-md-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?
+         </div>
+         <!-- here they stack once the display size becomes less than the display size for md,ie mid . above that they occupy 6 units like normal -->
+         <div class="col-md-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?
+         </div>
+      </div>
+      <div class="row">
+         <!-- here they stack once the display size becomes less than the display size for md,ie mid . above that they occupy 6 units in 2 rows until xl display size after which each of them occupy 3 units. -->
+         <div class="col-md-6 col-xl-3 bg-warning">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?
+         </div>
+         <div class="col-md-6 col-xl-3 bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?
+         </div>
+         <div class="col-md-6 col-xl-3 bg-warning">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?
+         </div>
+         <div class="col-md-6 col-xl-3 bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?
+         </div>
+      </div>
+      <br />
+      <!-- we can align items on the Y-axis using align-items- -->
+      <div class="row align-items-start">
+         <div class="col-md-6 col-xl-3 bg-warning">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?
+         </div>
+         <!-- we can also align specific divs by using align-self-  -->
+         <div class="col-md-6 col-xl-3 bg-info align-self-end">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?
+         </div>
+         <div class="col-md-6 col-xl-3 bg-warning">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Porro culpa ratione voluptate officiis aliquid in
+            fugiat obcaecati totam delectus iste consectetur facilis, est quo
+            laudantium eaque omnis praesentium doloribus alias! Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Aliquid perferendis, iusto
+            voluptas illo provident nobis neque mollitia delectus! Saepe, qui
+            dolorem delectus laborum accusantium autem sit mollitia impedit harum
+            ducimus.
+         </div>
+         <div class="col-md-6 col-xl-3 bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed
+            maiores nesciunt expedita corrupti deserunt perspiciatis totam,
+            dignissimos voluptatem eius, minus deleniti, voluptates at culpa a
+            officiis eum dolore saepe?
+         </div>
+      </div>
+      <br />
+      <!-- here the text is justified based on X axis -->
+      <div class="row justify-content-between border">
+         <div class="col-3 bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia
+            ratione cupiditate libero aliquam provident obcaecati odio omnis eaque
+            porro molestias sequi, totam dolore perspiciatis nulla temporibus
+            laboriosam modi est.
+         </div>
+         <div class="col-3 bg-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+            quam corporis vitae ullam explicabo eum totam cupiditate expedita in
+            dolore. Quia laboriosam laborum maiores optio minima facere dolorum ab
+            id.
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-6 col-xl-4">
+            <img
+               src="https://images.unsplash.com/photo-1666974993470-d1116c9667e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               alt="img1"
+               class="img-fluid"
+               />
+         </div>
+         <div class="col-md-6 col-xl-4">
+            <img
+               class="img-fluid"
+               src="https://images.unsplash.com/photo-1666974993470-d1116c9667e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               alt="img2"
+               />
+         </div>
+         <div class="col-md-6 col-xl-4">
+            <img
+               class="img-fluid"
+               src="https://images.unsplash.com/photo-1667222886295-72267cdc99ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+               alt="img3"
+               />
+         </div>
+      </div>
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+         crossorigin="anonymous"
+         ></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+         crossorigin="anonymous"
+         ></script>
+   </body>
 </html>
