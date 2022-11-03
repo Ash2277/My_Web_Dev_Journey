@@ -1,0 +1,62 @@
+body{
+    background-color: #f5d9df;
+    font-family: "Nunito",sans-serif;
+}
+
+/* nav{
+    background-color: #f5d9df;
+} */
+
+.nav-link{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.nav-link:hover{
+    color: #ea1c2c;
+    transition: 0.4s;
+}
+
+.navbar-brand{
+    color: #ea1c2c;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.slash{
+    color: #ea1c2c;
+}
+
+.candy{
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+@media(max-width:1200px) {
+    .candy{
+        font-size: 3.5rem;
+    }
+}
+
+.heading{
+    text-align: center;
+    color: #ea1c2c;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.randtext{
+    color: #f498b8;
+    font-weight: 100;
+    font-size: 1.125rem;
+
+}
+
+.box{
+    margin-top: 100px;
+}
+
+.navbar.scrolled{
+    background: rgb(222,192,222);
+    transition: 0.5s;
+}
